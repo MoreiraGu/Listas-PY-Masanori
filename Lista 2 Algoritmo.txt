@@ -1,0 +1,97 @@
+Gustavo Santos Moreira TURMA ADS 1Semestre
+
+Ex1)
+a = float(input('Digite tamanho do primeiro lado do triângulo:' ))
+b = float(input('Digite tamanho do segundo lado do triângulo:' ))
+c = float(input('Digite tamanho do terceiro lado do triângulo:' ))
+
+if a<b+c and b<c+a and c<a+b:
+  print ('Estes valores fazem um triângulo do tipo:')
+  if a==b==c:
+    print('Equilátero')
+  elif a==b or b==c or a==c:
+    print('Isósceles')
+  else:
+      print ('Escaleno')
+else:
+  print ('Estes valores não podem formar um triângulo')
+
+Ex2)
+ano = int(input('Digite o ano: '))
+if ano%4 == 0:
+   print (' Esse ano é um ano bissexto')
+elif ano%100 == 0:
+   print (' Esse ano é um ano bissexto')
+elif ano%400 == 0:
+   print (' Esse ano é um ano bissexto')
+else:
+   print (' Esse ano não é um ano bissexto')
+
+Ex3)
+peso = float(input('Quantos quilos de peixe João trouxe?: '))
+
+if peso > 50:
+  exc = (peso-50)* 4
+  print (f'João precisa pagar:R${exc:.2f}') 
+else:
+   print (' João não precisa pagar a multa ')
+
+Ex4)
+a = int(input('Digite o primeiro valor: '))
+b = int(input('Digite o segundo valor: '))
+c = int(input('Digite o terceiro valor: '))
+
+if a>b and a>c:
+  print (f'O número de maior valor é:{a}')
+elif b>a and b>c:
+   print (f'O número de maior valor é:{b}')
+else:
+   print(f'O número de maior valor é:{c}')
+
+Ex5)
+a = int(input('Digite o primeiro valor: '))
+b = int(input('Digite o segundo valor: '))
+c = int(input('Digite o terceiro valor: '))
+
+if a>b and a>c:
+  print (f'O número de maior valor é:{a}')
+elif b>a and b>c:
+   print (f'O número de maior valor é:{b}')
+else:
+   print(f'O número de maior valor é:{c}')
+
+if a<b and a<c:
+  print (f'O número de menor valor é:{a}')
+elif b<a and b<c:
+   print (f'O número de menor valor é:{b}')
+else:
+   print(f'O número de menor valor é:{c}')
+
+Ex6)
+gh = int(input('Digite quanto você ganha por hora: '))
+h = int(input('Digite quantas horas trabalha por mês: '))
+
+sb = gh*h
+ir = sb*0.11
+inss = sb*0.08
+s = sb*0.05
+sl = sb-ir-inss-s
+print (f'Você ganha R${sb:.2f} bruto por mês. Descontando R${ir:.2f} para o IR (11%), R${inss:.2f} do INSS(8%) e R${s:.2f} do Sindicato(5%), você acaba ganhando R${sl:.2f} líquido.')
+
+Ex7)
+m = int(input('Digite quantos metros quadrados de área a ser pintada:'))
+if m % 54 == 0:
+   lata = m/54
+else:
+   lata = int(m/54) + 1
+
+print(f'Latas:{lata} ')
+print(f'Valor : {lata*80:.2f}')
+   
+
+
+
+
+
+
+

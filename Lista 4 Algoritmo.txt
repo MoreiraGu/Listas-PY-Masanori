@@ -1,0 +1,86 @@
+Gustavo Santos Moreira 1 ADS 1 Semestre
+
+def ex1():
+    import random
+    from random import sample
+    numeros = random.sample(range(100), 10)
+    maior = numeros[0]
+    menor = numeros[0]
+    for num in numeros:
+        if num < menor:
+            menor = num
+        if num > maior:
+            maior = num
+    print(f'Dez números aleatórios entre 1 e 100: {numeros}')
+    print(f'O menor valor é: {menor}')
+    print(f'O maior valor é: {maior}')
+
+def ex2():
+    import random
+    from random import sample
+    numeros = random.sample(range(100), 20)
+    par = []
+    impar = []
+    
+    for num in numeros:
+       if num % 2 == 0:
+            par.append(num)
+       else:
+            impar.append(num)
+            
+    print(f'Vinte números aleatórios entre 1 e 100: \n{numeros}')
+    print(f'Lista de números pares: {par}')
+    print(f'Lista de números ímpares: {impar}')
+
+def ex3():
+    import random
+    from random import sample
+    v1 = random.sample(range(100), 10)
+    v2 = random.sample(range(100), 10)
+    v3 = []
+    for k in range(10):
+        v3.append(v1[k])
+        v3.append(v2[k])
+    print(f'Vetor 1: {v1}')
+    print(f'Vetor 2: {v2}')
+    print(f'Vetor 3 intercalado: \n{v3}')
+
+def ex4():
+    t = '''The Python Software Foundation and the global Python
+    community welcome and encourage participation by everyone.
+    Our community is based on mutual respect, tolerance, and
+    encouragement, and we are working to help each other live up
+    to these principles. We want our community to be more diverse:
+    whoever you are, and whatever your background, we welcome you.'''
+    t = t.replace('.', ' ')
+    t = t.replace(',', ' ')
+    t = t.replace(':', ' ')
+    t = t.lower()
+    
+    p = t.split()
+    print(f'Lista de palavras do texto: {p}')
+    lpy = 'python'
+    pf = []
+    for palavra in p:
+        if any(palavra[0] == letra or palavra[-1] == letra for letra in lpy):
+            pf.append(palavra)
+    print(f'Lista de palavras que começam ou terminam com letras da palavra (python): \n{pf}')
+         
+def ex5():
+    t = '''The Python Software Foundation and the global Python
+    community welcome and encourage participation by everyone.
+    Our community is based on mutual respect, tolerance, and
+    encouragement, and we are working to help each other live up
+    to these principles. We want our community to be more diverse:
+    whoever you are, and whatever your background, we welcome you.'''
+    t = t.replace('.', ' ')
+    t = t.replace(',', ' ')
+    t = t.replace(':', ' ')
+    t = t.lower()
+
+    p = t.split()
+    lpy = 'python'
+    pf = [palavra for palavra in p
+          if any(letra in palavra for letra in lpy) and len(palavra) > 4]
+    npf = len(pf)
+    print(f'Número de palavras que contêm uma das letras de (python) e mais de 4 letras: {npf}')

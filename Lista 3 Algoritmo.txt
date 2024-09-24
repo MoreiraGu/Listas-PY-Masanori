@@ -1,0 +1,48 @@
+Gustavo Santos Moreira Lista 3 ADS 1 Semestre
+
+Ex 1)nota = int(input('Digite uma nota entre 0 e 10:'))
+while nota < 0 or nota > 10:
+   print ('Try again:')
+   nota = int(input('Digite uma nota entre 0 e 10:'))
+   
+print (f'Seu número é {nota}')
+
+Ex2)nome = input('Digite seu usuário: ')
+senha = input('Digite sua senha: ')
+
+while senha == nome:
+    print('A senha deve ser diferente do usuário.')
+    senha = input('Digite uma outra senha: ')
+
+print ('Login realizado com sucesso')
+
+Ex3)
+paisa=80000
+paisb=200000
+i=0
+
+while paisa <= paisb:
+ paisa= paisa * 0.03 + paisa
+ paisb= paisb * 0.015 + paisb
+ i = i+1
+
+print(f'Foram necessários {i} anos para que a população do país A ultrapassasse o país B')
+
+Ex4)
+a=1
+b=1
+x=1
+y = int(input('Digite o valor de vezes que quer que ele repita.'))
+print ( 1, 1)
+while x<=y:
+ x = x+1
+ a,b = b, a+b
+ print(a, b)
+
+Ex5)
+a = int(input('Digite o primeiro número inteiro: '))
+b = int(input('Digite o segundo número inteiro: '))
+
+while a%b != 0: 
+ a,b = b, a%b
+print (b)

@@ -1,0 +1,100 @@
+LISTA 1 - Gustavo Santos Moreira Turma ADS 1 Semestre
+
+ex 1)
+nmr1 = int(input("Digite o primeiro número INTEIRO: "))
+nmr2 = int(input("Digite o segundo número INTEIRO: "))
+
+print (f'O resultado da soma é: {nmr1+nmr2}')
+
+
+ex 2)
+metro = int(input('Digite o valor em METROS: '))
+
+milimetro = metro * 1000
+
+print ('O valor do(s) metro(s) em milímetro são :',milimetro)
+
+ex 3)
+idaded = int(input('Digite quantos dias você tem: '))
+idadeh = int(input('Digite quantas horas você tem: '))
+idadem = int(input('Digite quantos minutos você tem: '))
+idades = int(input('Digite quantos segundos você tem: '))
+
+segd = idaded * 86400
+segh = idadeh * 3600
+segm = idadem * 60
+
+print (f'Seu tempo de vida total em segundos é de: {segd+segh+segm+idades}')
+
+
+ex 4)
+salario = float(input('Digite seu salário: '))
+aumento = float(input('Digite a porcentagem do aumento: '))
+
+sn = salario + aumento / 100 * salario
+
+print (f' Seu salário atual é de :R${sn:.2f}')
+
+ex 5)
+valort = int(input('Digite o valor total do item: '))
+desc = int(input(' Digite a porcentagem do desconto: '))
+
+d = desc / 100 * valort
+item = valort - d
+
+print (f' O valor do desconto é de R${d} e o valor reajustado ao desconto é de R${item}')
+
+
+ex 6)
+dist = int(input('Qual a distância a ser percorrida em KM?: '))
+velo = int(input('Qual a velocidade média da viagem em KM/H?: '))
+
+cam = dist / velo
+
+print (f' O tempo médio da viagem é de {cam} hora(s)')
+
+
+ex 7)
+temp = int(input('Qual a temperatura em CELSIUS a ser convertida?: '))
+
+f = 9*temp/5 + 32
+
+print (f' A temperatura convertida em Fahrenheit é de:{f}')
+
+
+ex 8)
+temp = int(input('Qual a temperatura em FAHRENHEIT a ser convertida?: '))
+
+c = 5/9*(temp-32)
+
+print (f' A temperatura convertida em Celsius é de:{c:.1f}')
+
+
+ex 9)
+kmp = float(input('Digite a quilometragem percorrida pelo carro: '))
+qntd = float(input('Digite a quantidade de dias que o carro foi alugado: '))
+
+valor1 = kmp*0.15
+valor2 = qntd*60
+
+rf = valor1 + valor2
+
+print (f'O valor total em reais que terá de ser pago a locadora é de : R${rf:.2f}')
+
+
+ex 10)
+cd = float(input('Quantos cigarros você fuma por dia: '))
+anos = float(input('Há quantos anos você fuma?: '))
+
+ca = cd*365*anos
+tempm = ca*10
+
+
+print (f'O valor em minutos de tempo de vida perdido é de :{tempm:.2f}')
+
+ex 11)
+
+print (len(str(2**10000)))
+
+
+
